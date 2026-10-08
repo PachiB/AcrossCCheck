@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "1.0.0",
+  "id": "efcf6064-aaf5-4941-992b-6fd318ab816e",
+  "packageName": "com.acrosslegal.conflictcheck",
+  "developer": {
+    "name": "Across Legal",
+    "websiteUrl": "https://acrosslegal.com",
+    "privacyUrl": "https://acrosslegal.com/privacidad",
+    "termsOfUseUrl": "https://acrosslegal.com/terminos"
+  },
+  "name": {
+    "short": "Conflict Check",
+    "full": "Across Legal - Conflict Check"
+  },
+  "description": {
+    "short": "Solicitud y seguimiento de conflict checks",
+    "full": "Crea solicitudes de conflict check, haz seguimiento en tiempo real de quien ha respondido y consulta el panel de administracion de Across Legal."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#0C2340",
+  "staticTabs": [
+    {
+      "entityId": "conflictcheck-home",
+      "name": "Conflict Check",
+      "contentUrl": "https://apps.powerapps.com/play/e/__ENVIRONMENT_ID__/a/__POWERAPP_ID__?tenantId=__TENANT_ID__&hidenavbar=true",
+      "websiteUrl": "https://apps.powerapps.com/play/e/__ENVIRONMENT_ID__/a/__POWERAPP_ID__",
+      "scopes": ["personal"]
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["apps.powerapps.com", "*.powerapps.com", "*.dynamics.com"]
+}
